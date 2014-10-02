@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sullivan Bruck Architects - By Nathan Moser</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../../_/css/styles.css">
+</head>
+<body class="work-details">
+<div class="wrapper">
+	<nav class="mobile">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="content">
+		<header>
+			<a href="" class="toggle-nav">
+				<div class="burger"></div>
+			</a>
+			
+			<nav class="primary-nav">
+				<a class="navToggle" href="#">
+					<div class="burger"></div>
+				</a>
+				<ul class="group">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a class="about-toggle" href="#about">About</a></li>
+					<li><a href="../../index.html#work">Work</a></li>
+					<li><a href="../../index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+		
+			<div class="title">
+				<h5>
+					<span class="small">Project: </span> <span class="project-title">Sullivan Bruck Architects</span>
+				</h5>
+				<h5>
+					<span class="small">Service: </span> <span class="service-role">Web Redesign<span>
+				</h5>
+				<h5>
+					<span class="small">Role: </span> <span class="service-role">Concept Designer<span>
+				</h5>
+				<hr>
+				<p>Creating concepts for a quick deadline can be of the most challenging tasks as a designer. It's also one of the most rewarding. I was pulled in on this project during the beginning concept phases to present a different perspective of Sullivan Bruck's "about" page. It was great opportunity for skill building and teamwork. Moreover, it ended up being used for their final site.</p>
+				<p>Below are some shots I took while traveling</p>
+				<p>You can see more of their work here: <a class="sbarch" href="http://sbarch.com">sbarch.com</a></p>
+			</div>
+
+			<section id="about" class="about">
+				<div id="toggle">
+					<div class="burger"></div>
+				</div>
+				<div class="group">
+					<div class="info group">
+						<div>
+							<img src="../../_/images/about/bio-profile.jpg" alt="">
+						</div>
+						<div>
+							<h4>Its Nice To Meet You</h4>
+							<p> My name is Nathan Moser, I’m currently a digital designer working at <span class="red">Bonfire Red</span> in Columbus, Ohio. My love for making spans many mediums including web, music, graphite, and paint. These approaches are only the starting points in helping others experience meaningful interaction and relationships.</p>
+						</div>
+					</div>
+					<a class="btn" href="#work">View My Work</a>
+				</div>
+			</section>
+		
+		</header>
+		<section id="work" class="work-details">
+			<article class="details">
+				<img src="images/01.jpg" alt="">
+				<img src="images/02.jpg" alt="">
+				<img src="images/03.jpg" alt="">
+				<img src="images/04.jpg" alt="">
+				<img src="images/05.jpg" alt="">
+				<div class="other-projects">
+				<div class="prev-project">Last Project</div>
+				<div class="back-to-top">Back to top</div>
+				<div class="next-project">Next Project</div>
+				</div>
+			</article>
+		</section>
+	</div>
+</div>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="../../_/js/script.js"></script>
+	<script src="../../_/js/jquery.smooth-scroll.js"></script>
+	<script>
+    $(document).ready(function() {
+
+      $('a.btn').smoothScroll();
+      $('nav a').smoothScroll();
+      // $('#toggle').smoothScroll();
+
+    });
+
+  	</script>
+  	<script>
+  		$('a.about-toggle').click(function() {
+      		$('nav.primary-nav').toggleClass('dark');
+      });
+  	</script>
+	<script>
+		$(window).scroll(function() {    
+
+		    var scroll = $(window).scrollTop();
+		    var nav = $("nav.primary-nav");
+		    var navHeight = nav.height();
+		    if (scroll >= 500 - (navHeight / 2)) {
+		        $(nav).addClass("dark");
+		    } else {
+		    	$(nav).removeClass("dark")
+		    }
+		});
+	</script>
+	
+	<script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

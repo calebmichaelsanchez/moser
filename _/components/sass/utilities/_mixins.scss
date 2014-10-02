@@ -1,0 +1,88 @@
+@mixin big-bg($img) {
+	width: 100%;
+	height: 550px;
+	background-image: $img;
+	background-position: center center;
+	background-repeat: no-repeat;
+	@include background-size(cover);
+	@include transition(0.4s ease);
+	@include breakpoint($shmedium) {
+		//min-height: 800px;
+	}
+}
+@mixin slider-bg($image) {
+	background-image: $image;
+	background-position: center center;
+	background-repeat: no-repeat;
+	@include background-size(cover);
+	@include transition(0.4s ease);
+}
+
+@mixin btn($max-width, $color, $border-color) {
+	display: block;
+	max-width: $max-width;
+	font-family: $font-family--primary;
+	font-size: .75em;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 5px;
+	color: $color;
+	line-height: initial;
+
+	padding: 1rem 0;
+	margin: 0 auto;
+	outline: 0;
+	border: 1px solid rgba($border-color, .5);
+	@include border-radius(5px);
+
+	&:hover {
+		border-color: rgba($border-color, 1);
+	}
+
+}
+
+@mixin burger($bg-color) {
+	position: relative;
+	width: 35px;
+	height: 2px;
+	background: $bg-color;
+
+	&:after, &:before {
+		position: absolute;
+		background: $bg-color;
+	    content: "";
+	    display: block;
+	    height: 2px;
+	    transition: all 0.3s ease 0s;
+	    width: 35px;
+	    z-index: 1;
+	}
+}
+
+@mixin ghost {
+	text-align: center;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -0.25em;
+	}
+	div.ghosted {
+		display: inline-block;
+		vertical-align: middle;
+		width: 98%;
+	}
+}
+
+
+/* Work Detail link styles 
+=================== */
+@mixin work-link($link-color) {
+	color: $link-color;
+	&:hover {
+		color: darken($link-color, 15%);
+	}
+}

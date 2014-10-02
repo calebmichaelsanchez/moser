@@ -1,0 +1,104 @@
+// ==========================================================================
+// Navigation
+// ==========================================================================
+nav.primary-nav {
+	display: block;
+	position: fixed;
+	width: 100%;
+	top: -130%;
+	left: 0;
+	padding: 0; 
+	background: #fff;
+	z-index: 300;
+	@include transition(top 1s ease);
+
+	ul {
+		position: relative;
+		font-size: .95em;
+		text-align: center;
+	}
+	a { 
+		display: block;
+		width: 100%;
+		padding: 1rem 0;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		border-bottom: 1px solid transparent;
+		font-family: $font-family--primary;
+		font-weight: $font-weight--medium;
+		color: $primary-color;
+	} // a
+	a.active {
+		border-bottom: 1px solid $primary-hover;
+	} // active
+	@include breakpoint($medium) {
+		top: 0;
+		background: transparent;
+		ul {
+			width: 80%;
+			max-width: 1200px;
+			margin: 0 auto;
+			text-align: left;
+			font-size: .75em;
+		} // ul
+		li {
+			display: inline-block;
+		} // li
+		a {
+			color: rgba($white, 0.75);
+			padding: 2.5em 40px;
+			&:hover {
+				color: rgba($white, 1);
+			}
+		}
+		a.active {
+			color: rgba($white, 1);
+		}
+		li.logo,
+		li.nav--arrow {
+			display: none;
+		}
+	} // breakpoint	
+} // nav primary
+
+nav.open {
+	top: 0;
+	@include transition(top 1s ease);
+} // open
+li.logo img {
+	display: block;
+	margin: 10px auto 5px;
+	max-width: 50px;
+}
+li.nav--arrow img {
+	display: block;
+	margin: 0 auto;
+	width: 38px;
+} // nav--arrow
+
+nav.dark {
+	background: rgba(#fff, .98);
+	@include transition(0.4s ease);
+	ul li a {
+		color: rgba($primary-color, 0.7);
+		&:hover {
+			color: rgba($primary-color, 1);
+		} // hover
+	} // a
+	ul li a.active {
+		color: rgba($primary-color, 1);
+	} // active
+
+} // dark
+
+
+
+
+
+
+
+
+
+
+
+

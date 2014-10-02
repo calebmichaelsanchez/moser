@@ -1,0 +1,102 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+html, body, .wrapper, .content {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+body {
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+	font: 100% $font-family--secondary;
+	background: #fff;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+// ==================================
+// Typography
+// ==================================
+a {
+	text-decoration: none;
+	@include transition(all, 0.4s ease);
+}
+p {
+	font-family: $font-family--secondary;
+	font-size: 1rem;
+	font-style: italic;
+	color: $secondary-color;
+	line-height: 1.6;
+}
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4 {
+	font-family: $font-family--primary;
+	text-transform: uppercase;
+}
+h2, h3, h4 {
+	font-weight: $font-weight--medium;
+}
+h5, h6 {
+	font-family: $font-family--secondary;
+}
+h1 {
+	font-size: 1.125rem;
+	font-weight: $font-weight--bold;
+	color: #fff;
+	letter-spacing: 13px;
+	padding: 0 0 .5em 0;
+}
+h2 {
+	font-size: 1.25rem;
+	color: $primary-color;
+	letter-spacing: 5px;
+	margin: 0 0 10px;
+}
+h3 {
+	font-size: 1.3rem;
+	color: rgba(#000, .7);
+	letter-spacing: 2px;
+	margin-bottom: 6px;
+}
+h4	{
+	font-size: 1.2rem;
+	color: #fff;
+	letter-spacing: 10px;
+}
+h5	{
+	font-size: .875rem;
+	font-style: italic;
+	color: rgba(#000, .7);
+	letter-spacing: 1px;
+}
+h6 {
+	font-size: 1rem;
+	font-style: italic;
+	color: $primary-color;
+}
+hr {
+	border: none;
+	background: rgba($white, .7);
+	height: 1px;
+	width: 20px;
+	margin: 1em 0;
+}
+
+/* Globals 
+========================================*/
+span.red {
+	color: $tertiary-color;
+}

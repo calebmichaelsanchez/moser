@@ -1,0 +1,119 @@
+// ==========================================================================
+// Slider on Homepage
+// ==========================================================================
+
+.ideals-slider {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background: #fbfbf8;
+}
+	
+.slider-inner {
+	width: 400%;
+	position: relative;
+	height: 220px;
+	@include transition(.4s ease);
+	@include breakpoint($medium) {
+		height: 378px;
+	}
+}
+.slides {
+	@include ghost;
+	position: relative;
+	width: 25%;
+	height: 220px;
+	float: left;
+	
+	&:nth-of-type(1) {
+		@include slider-bg(url(../images/mobile_slider/01.jpg));
+	}
+	&:nth-of-type(2) {
+		@include slider-bg(url(../images/mobile_slider/02.jpg));
+	}
+	&:nth-of-type(3) {
+		@include slider-bg(url(../images/mobile_slider/03.jpg));
+	}
+	&:nth-of-type(4) {
+		@include slider-bg(url(../images/mobile_slider/04.jpg));
+	}
+	@include breakpoint($medium) {
+		height: 378px;
+		&:nth-of-type(1) {
+			@include slider-bg(url(../images/desktop_slider/01.jpg));
+		}
+		&:nth-of-type(2) {
+			@include slider-bg(url(../images/desktop_slider/02.jpg));
+		}
+		&:nth-of-type(3) {
+			@include slider-bg(url(../images/desktop_slider/03.jpg));
+		}
+		&:nth-of-type(4) {
+			@include slider-bg(url(../images/desktop_slider/04.jpg));
+		}
+	} // breakpoint
+	.quote {
+		max-width: 80%;
+
+		h5 {
+			font-family: $font-family--primary;
+			font-style: normal;
+			color: $primary-color;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			line-height: 1.5;
+			margin-bottom: 10px;
+		}
+		@include breakpoint($medium) {
+			max-width: 740px;
+
+			h5 {
+				font-size: 1.125rem;
+			}
+
+		} // breakpoint
+	} // quote
+} // slides
+
+.controls {
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid rgba($secondary-color, 0.35);
+	padding: 1rem 0;
+	text-align: center;
+	background: #fff;
+
+	.square {
+		display: inline-block;
+		width: 11.5px;
+		height: 11.5px;
+		margin: 0 10px;
+		background: $secondary-color;
+		@include transform(rotate(45deg));
+		@include transition(background 0.4s ease);
+		cursor: pointer;
+
+		&:hover {
+			background: $primary-hover;
+		}
+
+	}
+	.active-control {
+		background: $primary-hover;
+	}
+	@include breakpoint($medium) {
+		position: absolute;
+		bottom: 0;
+		max-width: 100px;
+		border-bottom: none;
+		left: 50%;
+		margin-left: -50px;
+		padding: .5rem;
+
+		.square {
+			width: 7px;
+			height: 7px;
+			margin: 0 5px;
+		}
+	}
+}
