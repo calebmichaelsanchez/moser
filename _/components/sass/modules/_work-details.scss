@@ -77,20 +77,33 @@ section.work-details {
 	}
 	.prev-project,
 	.next-project {
-		position: absolute;
+		position: relative;
+		width: 100%;
+		text-align: center;
 		top: 0;
 	}	
-	.prev-project {
-		left: 0;
-	}
-	.next-project {
-		right: 0;
-	}
 	.back-to-top {
 		position: relative;
 		width: 50%;
-		margin: 0 auto;
+		margin: 20px auto;
 		text-align: center;
+	}
+	@include breakpoint($small) {
+		.prev-project,
+		.next-project {
+			position: absolute;
+		}
+		.prev-project {
+			text-align: left;
+			left: 0;
+		}
+		.next-project {
+			text-align: right;
+			right: 0;
+		}
+		.back-to-top {
+			margin: 0 auto;
+		}
 	}
 }
 /* Work Detail Link Styles

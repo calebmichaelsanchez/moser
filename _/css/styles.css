@@ -809,17 +809,27 @@ section.work-details {
       color: #cccccc; }
   .other-projects .prev-project,
   .other-projects .next-project {
-    position: absolute;
+    position: relative;
+    width: 100%;
+    text-align: center;
     top: 0; }
-  .other-projects .prev-project {
-    left: 0; }
-  .other-projects .next-project {
-    right: 0; }
   .other-projects .back-to-top {
     position: relative;
     width: 50%;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center; }
+  @media (min-width: 32.5em) {
+    .other-projects .prev-project,
+    .other-projects .next-project {
+      position: absolute; }
+    .other-projects .prev-project {
+      text-align: left;
+      left: 0; }
+    .other-projects .next-project {
+      text-align: right;
+      right: 0; }
+    .other-projects .back-to-top {
+      margin: 0 auto; } }
 
 /* Work Detail Link Styles
 ================================ */
