@@ -670,9 +670,11 @@ section.open {
   position: relative; }
   .work-info h2 {
     text-align: left;
-    margin: 18px 0 0; }
+    margin: 18px 0 0;
+    font-weight: 400; }
   .work-info h6 {
-    margin: 12px 0; }
+    margin: 12px 0;
+    font-weight: 400; }
   .work-info h6:first-of-type {
     color: #756c64; }
   .work-info hr.work-short {
