@@ -8,9 +8,8 @@
 	<link rel="stylesheet" href="_/css/styles.css">
 </head>
 <body>
-<div class="wrapper">
-<div class="content">
-<header>
+
+<header id="home">
 	<a href="" class="toggle-nav">
 		<div class="burger"></div>
 	</a>
@@ -19,24 +18,24 @@
 		<ul class="group">
 			<li class="logo">
 				<a href="../../index.html">
-					<img src="_/images/logo_dark.png" alt="">
+					<img src="_/images/logo_dark.png" alt="Nathan Moser Logo">
 				</a>
 			</li>
 			<li>
-				<a class="active" href="index.html">Home</a>
+				<a class="active" href="#home">Home</a>
 			</li>
 			<li>
 				<a class="about-toggle" href="#about">About</a>
 			</li>
 			<li>
-				<a href="#work">Work</a>
+				<a class="work-link" href="#work">Work</a>
 			</li>
 			<li>
 				<a href="#contact">Contact</a>
 			</li>
 			<li class="nav--arrow">
 				<a href="#">
-					<img src="_/images/mobile_nav_arrow.png" alt="">
+					<img src="_/images/mobile_nav_arrow.png">
 				</a>
 			</li>
 		</ul>
@@ -133,7 +132,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="" class="work">
+		<a href="work/salon-lofts/index.html" class="work">
 			<img src="_/images/mobile_thumbs/03.jpg" alt="">
 			<div class="overlay">
 				<div class="work-info">
@@ -177,7 +176,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="" class="work">
+		<a href="work/huawei/index.html" class="work">
 			<img src="_/images/mobile_thumbs/07.jpg" alt="">
 			<div class="overlay">
 				<div class="work-info">
@@ -202,39 +201,29 @@
 		
 	</section>
 </div>
-<footer class="group">
-	<div class="footer-left">Content</div>
-	<div class="footer-right">Content</div>
+<footer class="group" id="contact">
+	<div class="footer-left">
+		<img src="_/images/logo.png">
+		<hr>
+		<h6>Nathan Moser</h6>
+		<p>Visual Designer</p>
+	</div>
+	<div class="footer-right">
+		<div class="ghosted">
+			<ul>
+				<li><a href="https://www.facebook.com/nathan.moser.98"><img src="_/images/footer/facebook.png" alt="Link to Facebook"></a></li>
+				<li><a href="http://instagram.com/ndwmoser"><img src="_/images/footer/instagram.png" alt="Link to Instagram"></a></li>
+				<li><a href="mailto:ndwmoser@gmail.com"><img src="_/images/footer/email.png" alt="Link to email"></a></li>
+			</ul>
+			<p>614.312.3984</p>
+		</div>
+	</div>
 </footer>
-</div>
-</div>
+
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="_/js/script.js"></script>
 <script src="_/js/jquery.smooth-scroll.js"></script>
-<script>
-  $(document).ready(function() {
-    $('a.btn').smoothScroll();
-    $('nav a').smoothScroll();
-    // $('#toggle').smoothScroll();
-  });
-</script>
-<script>
-	$('a.about-toggle').click(function() {
-  		$('nav.primary-nav').toggleClass('dark');
-  });
-</script>
-<script>
-	$(window).scroll(function() {    
-	    var scroll = $(window).scrollTop();
-	    var nav = $("nav.primary-nav");
-	    var navHeight = nav.height();
-	    if (scroll >= 550 - (navHeight / 2)) {
-	        $(nav).addClass("dark");
-	    } else {
-	    	$(nav).removeClass("dark")
-	    }
-	});
-</script>
+<script src="_/js/script.js"></script>
+
 <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

@@ -8,122 +8,115 @@
 </head>
 <body class="work-details">
 <div class="wrapper">
-	<div class="content">
-		<header>
-			<a href="" class="toggle-nav">
-				<div class="burger"></div>
-			</a>
-			<!-- Navigation -->
-			<nav class="primary-nav">
-				<ul class="group">
-					<li class="logo">
-						<a href="../../index.html">
-							<img src="../../_/images/logo_dark.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a class="about-toggle" href="#about">About</a>
-					</li>
-					<li>
-						<a class="active" href="#work">Work</a>
-					</li>
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-					<li class="nav--arrow">
-						<a href="#">
-							<img src="../../_/images/mobile_nav_arrow.png" alt="">
-						</a>
-					</li>
-				</ul>
-			</nav>
+
+	<header>
+		<a href="#" class="toggle-nav">
+			<div class="burger"></div>
+		</a>
 		
-			<div class="title ghosted">
-				<h5>
-					<span class="small">Project: </span> <span class="project-title">No Place Studios</span>
-				</h5>
-				<h5>
-					<span class="small">Role: </span> <span class="service-role">Artist / Maker</span>
-				</h5>
-				<hr>
-				<p>No Place Studios was established in the summer 2012 as the result of 10 friends looking to continue their passions for art making outside of an academic institution. It has become a pivotal spot in Columbus's creative community, houses E.A.S.(Y) publishing, and frequently doubles as a an event space for mulitple occastions. Below is a small sample of the work I make at my second "office".</p>
-				<p>
-				<a class="no-place" href="http://noplacecolumbus.tumblr.com">noplacecolumbus.tumblr.com</a></p>
-			</div>
-
-				<!-- About Section
-				Hidden until #about is clicked -->
-			<section id="about" class="about">
-				<div class="toggle">
-					<div class="burger"></div>
-				</div>
-				<div class="info group ghosted">
-					<div>
-						<img src="../../_/images/about/bio-profile.jpg" alt="">
-					</div>
-					<div>
-						<h4>Its Nice To Meet You</h4>
-						<p> My name is Nathan Moser, I’m currently a digital designer working at <span class="red">Bonfire Red</span> in Columbus, Ohio. My love for making spans many mediums including web, music, graphite, and paint. These approaches are only the starting points in helping others experience meaningful interaction and relationships.</p>
-					</div>
-					<a class="btn" href="#work">View My Work</a>
-				</div>
-			</section>
-		
-		</header>
-		<section id="work" class="work-details">
-			<article class="details">
-				<img src="images/01.jpg" alt="">
-				<img src="images/02.jpg" alt="">
-				<img src="images/03.jpg" alt="">
-				<img src="images/04.jpg" alt="">
-				<img src="images/05.jpg" alt="">
-				<img src="images/06.jpg" alt="">
-				<img src="images/07.jpg" alt="">
-				<img src="images/08.jpg" alt="">
-				<div class="other-projects">
-				<div class="prev-project">Last Project</div>
-				<div class="back-to-top">Back to top</div>
-				<div class="next-project">Next Project</div>
-				</div>
-			</article>
-		</section>
-	</div>
-</div>
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="../../_/js/script.js"></script>
-	<script src="../../_/js/jquery.smooth-scroll.js"></script>
-	<script>
-    $(document).ready(function() {
-
-      $('a.btn').smoothScroll();
-      $('nav a').smoothScroll();
-      // $('#toggle').smoothScroll();
-
-    });
-
-  	</script>
-  	<script>
-  		$('a.about-toggle').click(function() {
-      		$('nav.primary-nav').toggleClass('dark');
-      });
-  	</script>
-	<script>
-		$(window).scroll(function() {    
-
-		    var scroll = $(window).scrollTop();
-		    var nav = $("nav.primary-nav");
-		    var navHeight = nav.height();
-		    if (scroll >= 500 - (navHeight / 2)) {
-		        $(nav).addClass("dark");
-		    } else {
-		    	$(nav).removeClass("dark")
-		    }
-		});
-	</script>
+		<!-- Navigation -->
+		<nav class="primary-nav">
+			<ul class="group">
+				<li class="logo">
+					<a href="../../index.html">
+						<img src="../../_/images/logo_dark.png" >
+					</a>
+				</li>
+				<li>
+					<a href="../../index.html">Home</a>
+				</li>
+				<li>
+					<a class="about-toggle" href="#about">About</a>
+				</li>
+				<li>
+					<a class="active" href="#work">Work</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+				<li class="nav--arrow">
+					<a href="#">
+						<img src="../../_/images/mobile_nav_arrow.png" >
+					</a>
+				</li>
+			</ul>
+		</nav>
 	
-	<script src="http://localhost:35729/livereload.js"></script>
+		<div class="title ghosted">
+			<h5>
+				<span class="small">Project: </span> <span class="project-title">No Place Studios</span>
+			</h5>
+			<h5>
+				<span class="small">Role: </span> <span class="service-role">Artist / Maker</span>
+			</h5>
+			<hr>
+			<p>No Place Studios was established in the summer 2012 as the result of 10 friends looking to continue their passions for art making outside of an academic institution. It has become a pivotal spot in Columbus's creative community, houses E.A.S.(Y) publishing, and frequently doubles as a an event space for mulitple occastions. Below is a small sample of the work I make at my second "office".</p>
+			<p>
+			<a class="no-place" href="http://noplacecolumbus.tumblr.com">noplacecolumbus.tumblr.com</a></p>
+		</div>
+
+			<!-- About Section
+			Hidden until #about is clicked -->
+		<section id="about" class="about">
+			<div class="toggle">
+				<div class="burger"></div>
+			</div>
+			<div class="info group ghosted">
+				<div>
+					<img src="../../_/images/about/bio-profile.jpg" >
+				</div>
+				<div>
+					<h4>Its Nice To Meet You</h4>
+					<p> My name is Nathan Moser, I’m currently a digital designer working at <span class="red">Bonfire Red</span> in Columbus, Ohio. My love for making spans many mediums including web, music, graphite, and paint. These approaches are only the starting points in helping others experience meaningful interaction and relationships.</p>
+				</div>
+				<a class="btn" href="#work">View My Work</a>
+			</div>
+		</section>
+	
+	</header>
+	<section id="work" class="work-details">
+		<article class="details">
+			<img src="images/01.jpg" >
+			<img src="images/02.jpg" >
+			<img src="images/03.jpg" >
+			<img src="images/04.jpg" >
+			<img src="images/05.jpg" >
+			<img src="images/06.jpg" >
+			<img src="images/07.jpg" >
+			<img src="images/08.jpg" >
+			<div class="other-projects">
+				<div class="prev-project"><a href="../spacejunk/index.html">Last Project</a></div>
+				<div class="back-to-top"><a href="#home">Back to top</a></div>
+				<div class="next-project"><a href="../salon-lofts/index.html">Next Project</a></div>
+			</div>
+		</article>
+	</section>
+
+	<!-- Footer -->
+	<footer class="group" id="contact">
+		<div class="footer-left">
+			<img src="../../_/images/logo.png">
+			<hr>
+			<h6>Nathan Moser</h6>
+			<p>Visual Designer</p>
+		</div>
+		<div class="footer-right">
+			<div class="ghosted">
+				<ul>
+					<li><a href="https://www.facebook.com/nathan.moser.98"><img src="../../_/images/footer/facebook.png" alt="Link to Facebook"></a></li>
+					<li><a href="https://www.instagram.com/ndwmoser"><img src="../../_/images/footer/instagram.png" alt="Link to Instagram"></li>
+					<li><a href="mailto:ndwmoser@gmail.com"><img src="../../_/images/footer/email.png" alt="Link to email"></a></li>
+				</ul>
+				<p>614.312.3984</p>
+			</div>
+		</div>
+	</footer>
+
+</div>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="../../_/js/jquery.smooth-scroll.js"></script>
+<script src="../../_/js/script.js"></script>	
+
+<script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>
