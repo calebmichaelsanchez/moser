@@ -1,9 +1,20 @@
 /* Work Details 
 =================================================== */
 .work-details {
+	.toggle-nav {
+		padding: 1rem 1rem;
+	}
 	.title {
 		max-width: 875px;
-		padding: 0 2rem;
+		padding: 0 1rem;
+	}
+	@include breakpoint($shmedium) {
+		.toggle-nav {
+			padding: 1rem 2rem;
+		}
+		.title {
+			padding: 0 2rem;
+		}
 	}
 }
 .work-details {
