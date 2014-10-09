@@ -50,6 +50,9 @@ section.open {
 		font-style: normal;
 		margin-bottom: 1.5em;
 		padding: 0 6px;
+		@include breakpoint($medium) {
+			padding: 0;
+		}
 	} // p
 	.btn {
 		@include btn(280px, $primary-color, $primary-color);

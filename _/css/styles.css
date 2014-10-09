@@ -43,8 +43,7 @@ a {
 
 p {
   font-family: Merriweather, Lucida, serif;
-  font-size: 1rem;
-  font-style: italic;
+  font-size: 0.875em;
   color: #756c64;
   line-height: 1.6; }
 
@@ -64,14 +63,14 @@ h5, h6 {
   font-family: Merriweather, Lucida, serif; }
 
 h1 {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: 13px;
   padding: 0 0 .5em 0; }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #4c3e2d;
   letter-spacing: 5px;
   margin: 0 0 10px; }
@@ -89,18 +88,16 @@ h4 {
 
 h5 {
   font-size: .875rem;
-  font-style: italic;
   color: rgba(0, 0, 0, 0.7);
   letter-spacing: 1px; }
 
 h6 {
-  font-size: 1rem;
-  font-style: italic;
+  font-size: 0.875em;
   color: #4c3e2d; }
 
 hr {
   border: none;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.5);
   height: 1px;
   width: 20px;
   margin: 1em 0; }
@@ -118,7 +115,7 @@ span.red {
 .container {
   padding: 4em 0; }
 
-header {
+header.home {
   width: 100%;
   height: 650px;
   background-image: url("../images/mobile_background/01_background.jpg");
@@ -131,12 +128,14 @@ header {
   -moz-transition: ease 0.4s;
   -o-transition: ease 0.4s;
   -webkit-transition: ease 0.4s;
-  transition: ease 0.4s;
+  transition: ease 0.4s; }
+  @media (min-width: 37.5em) {
+    header.home {
+      height: 550px; } }
+
+header {
   text-align: center;
   position: relative; }
-  @media (min-width: 37.5em) {
-    header {
-      height: 550px; } }
   header:before {
     content: '';
     display: inline-block;
@@ -210,7 +209,7 @@ header {
     .title {
       max-width: 448px; }
       .title h1 {
-        font-size: 1.625rem; } }
+        font-size: 1.25rem; } }
 
 nav.primary-nav {
   display: block;
@@ -234,7 +233,7 @@ nav.primary-nav {
     width: 100%;
     padding: 1rem 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
     border-bottom: 1px solid transparent;
     font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
     font-weight: 400;
@@ -254,7 +253,7 @@ nav.primary-nav {
       nav.primary-nav li {
         display: inline-block; }
       nav.primary-nav a {
-        color: rgba(255, 255, 255, 0.75);
+        color: rgba(255, 255, 255, 0.5);
         padding: 2.5em 40px; }
         nav.primary-nav a:hover {
           color: white; }
@@ -356,6 +355,9 @@ section.open {
     font-style: normal;
     margin-bottom: 1.5em;
     padding: 0 6px; }
+    @media (min-width: 48em) {
+      .info p {
+        padding: 0; } }
   .info .btn {
     display: block;
     max-width: 280px;
@@ -561,6 +563,7 @@ section.open {
     max-width: 80%; }
     .slides .quote h5 {
       font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+      font-weight: 400;
       font-style: normal;
       color: #4c3e2d;
       text-transform: uppercase;
@@ -673,25 +676,21 @@ section.open {
   position: relative; }
   .work-info h2 {
     text-align: left;
-    margin: 18px 0 0;
+    margin: 18px 0 6px;
     font-weight: 400; }
   .work-info h6 {
-    margin: 12px 0;
+    margin: 0;
     font-weight: 400; }
   .work-info h6:first-of-type {
     color: #756c64; }
   .work-info hr.work-short {
-    width: 60px;
-    height: 1px;
-    border: none;
-    background: #4c3e2d;
-    padding: 0;
-    margin: 0; }
+    background: rgba(76, 62, 45, 0.5);
+    margin: 12px 0; }
   @media (min-width: 48em) {
     .work-info {
       position: absolute;
       width: 100%;
-      padding: 10px 10px 15px;
+      padding: 15px 30px 20px;
       z-index: 200;
       overflow: hidden;
       bottom: 0; }
@@ -870,6 +869,61 @@ a.sbarch {
   a.sbarch:hover {
     color: #974026; }
 
+header.demo-builder,
+header.huawei,
+header.india,
+header.no-place,
+header.salon-lofts,
+header.spacejunk,
+header.sullivan-burck,
+header.tell-collective {
+  width: 100%;
+  height: 650px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-transition: ease 0.4s;
+  -o-transition: ease 0.4s;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s; }
+  @media (min-width: 37.5em) {
+    header.demo-builder,
+    header.huawei,
+    header.india,
+    header.no-place,
+    header.salon-lofts,
+    header.spacejunk,
+    header.sullivan-burck,
+    header.tell-collective {
+      height: 550px; } }
+
+header.demo-builder {
+  background-image: url("../../work/demo-builder/images/background.jpg"); }
+
+header.huawei {
+  background-image: url("../../work/huawei/images/background.jpg"); }
+
+header.india {
+  background-image: url("../../work/india/images/background.jpg"); }
+
+header.no-place {
+  background-image: url("../../work/no-place/images/background.jpg"); }
+
+header.salon-lofts {
+  background-image: url("../../work/salon-lofts/images/background.jpg"); }
+
+header.spacejunk {
+  background-image: url("../../work/spacejunk/images/background.jpg"); }
+
+header.sullivan-bruck {
+  background-image: url("../../work/sullivan-bruck/images/background.jpg"); }
+
+header.tell-collective {
+  background-image: url("../../work/tell-collective/images/background.jpg"); }
+
 footer {
   position: relative;
   width: 100%;
@@ -924,7 +978,14 @@ footer {
     display: inline-block;
     padding-left: 10px; }
   .footer-right img {
-    width: 25px; }
+    width: 25px;
+    opacity: .5;
+    -moz-transition: ease 0.4s;
+    -o-transition: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    transition: ease 0.4s; }
+    .footer-right img:hover {
+      opacity: 1; }
   .footer-right p {
     text-align: right;
     padding: 0; }

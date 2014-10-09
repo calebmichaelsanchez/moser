@@ -52,6 +52,11 @@ footer {
 	}
 	img {
 		width: 25px;
+		opacity: .5;
+		@include transition(.4s ease);
+		&:hover {
+			opacity: 1;
+		}
 	}
 	p {
 		text-align: right;

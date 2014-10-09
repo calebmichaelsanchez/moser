@@ -1,8 +1,10 @@
 // ==========================================================================
 // Header
 // ==========================================================================
-header {
+header.home {
 	@include big-bg(url("../images/mobile_background/01_background.jpg"));
+}
+header {
 	@include ghost;
 
 	position: relative;
@@ -52,7 +54,7 @@ header {
 	@include breakpoint($shmedium) {
 		max-width: 448px;
 		h1 {
-			font-size: 1.625rem;
+			font-size: 1.25rem;
 		}
 	}
 }

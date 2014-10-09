@@ -1,0 +1,34 @@
+header.demo-builder,
+header.huawei,
+header.india,
+header.no-place,
+header.salon-lofts,
+header.spacejunk,
+header.sullivan-burck,
+header.tell-collective {
+	@include work-details-header
+}
+header.demo-builder {
+	@include work-details('demo-builder');
+}
+header.huawei {
+	@include work-details('huawei');
+}
+header.india {
+	@include work-details('india');
+}
+header.no-place {
+	@include work-details('no-place');
+}
+header.salon-lofts {
+	@include work-details('salon-lofts');
+}
+header.spacejunk {
+	@include work-details('spacejunk');
+}
+header.sullivan-bruck {
+	@include work-details('sullivan-bruck');
+}
+header.tell-collective {
+	@include work-details('tell-collective');
+}

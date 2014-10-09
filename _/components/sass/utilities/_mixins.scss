@@ -10,6 +10,20 @@
 		height: 550px;
 	}
 }
+@mixin work-details-header {
+	width: 100%;
+	height: 650px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	@include background-size(cover);
+	@include transition(0.4s ease);
+	@include breakpoint($shmedium) {
+		height: 550px;
+	}
+}
+@mixin work-details($folder) {
+	background-image: url('../../work/#{$folder}/images/background.jpg');
+}
 @mixin slider-bg($image) {
 	background-image: $image;
 	background-position: center center;
