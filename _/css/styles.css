@@ -811,7 +811,7 @@ section.work-details {
   letter-spacing: 2px; }
   .other-projects a {
     font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
-    color: rgba(204, 204, 204, 0.5);
+    color: rgba(204, 204, 204, 0.8);
     font-size: .75rem;
     text-transform: uppercase; }
     .other-projects a:hover {
@@ -841,6 +841,9 @@ section.work-details {
     .other-projects .back-to-top {
       margin: 0 auto; } }
 
+.border {
+  border: 1px solid #eee; }
+
 /* Work Detail Link Styles
 ================================ */
 a.sj {
@@ -868,6 +871,11 @@ a.sbarch {
   color: #ce5d3b; }
   a.sbarch:hover {
     color: #974026; }
+
+a.salon-lofts {
+  color: #fff; }
+  a.salon-lofts:hover {
+    color: #d9d9d9; }
 
 header.demo-builder,
 header.huawei,

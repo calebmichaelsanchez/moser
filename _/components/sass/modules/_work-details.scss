@@ -79,7 +79,7 @@ section.work-details {
 	letter-spacing: 2px;
 	a {
 		font-family: $font-family--primary;
-		color: rgba(#ccc, 0.5);
+		color: rgba(#ccc, 0.8);
 		font-size: .75rem;
 		text-transform: uppercase;
 		&:hover {
@@ -118,6 +118,11 @@ section.work-details {
 		}
 	}
 }
+
+// Images with borders 
+.border {
+	border: 1px solid #eee;
+}
 /* Work Detail Link Styles
 ================================ */
 a.sj {
@@ -135,4 +140,7 @@ a.tell-collective {
 }
 a.sbarch {
 	@include work-link(#ce5d3b);
+}
+a.salon-lofts {
+	@include work-link(#fff);
 }
