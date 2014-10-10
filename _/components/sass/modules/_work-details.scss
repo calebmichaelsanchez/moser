@@ -79,11 +79,11 @@ section.work-details {
 	letter-spacing: 2px;
 	a {
 		font-family: $font-family--primary;
-		color: rgba(#ccc, 0.8);
+		color: #756c64;
 		font-size: .75rem;
 		text-transform: uppercase;
 		&:hover {
-			color: rgba(#ccc, 1);
+			color: #4c3e2d;
 		}
 	}
 	.prev-project,
@@ -127,7 +127,6 @@ section.work-details {
 ================================ */
 a.sj {
 	@include work-link(#f59500);
-	color: #f59500;
 }
 a.india {
 	@include work-link(#4e8075);
@@ -142,5 +141,11 @@ a.sbarch {
 	@include work-link(#ce5d3b);
 }
 a.salon-lofts {
+	@include work-link(#fff);
+}
+a.ads {
+	@include work-link(#fff);
+}
+a.huawei {
 	@include work-link(#fff);
 }
