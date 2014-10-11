@@ -19,7 +19,7 @@
 }
 .work-details {
 	h5 {
-		color: rgba(#fff, .95);
+		color: rgba(#fff, .5);
 		margin: 6px 0 3px;
 		span.small {
 			font-family: $font-family--primary;
@@ -31,7 +31,6 @@
 		span.service-role {
 			font-size: em(14px);
 			margin-left: 3px;
-
 		}
 		span.project-title {
 			font-family: $font-family--primary;
@@ -141,11 +140,11 @@ a.sbarch {
 	@include work-link(#ce5d3b);
 }
 a.salon-lofts {
-	@include work-link(#fff);
+	@include work-link(#fe8125);
 }
 a.ads {
-	@include work-link(#fff);
+	@include work-link(#48c5d9);
 }
 a.huawei {
-	@include work-link(#fff);
+	@include work-link(#581c12);
 }

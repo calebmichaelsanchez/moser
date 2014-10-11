@@ -64,7 +64,7 @@ h5, h6 {
 
 h1 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   letter-spacing: 13px;
   padding: 0 0 .5em 0; }
@@ -117,7 +117,7 @@ span.red {
 
 header.home {
   width: 100%;
-  height: 650px;
+  height: 550px;
   background-image: url("../images/mobile_background/01_background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -129,9 +129,6 @@ header.home {
   -o-transition: ease 0.4s;
   -webkit-transition: ease 0.4s;
   transition: ease 0.4s; }
-  @media (min-width: 37.5em) {
-    header.home {
-      height: 550px; } }
 
 header {
   text-align: center;
@@ -159,14 +156,14 @@ header {
     header .toggle-nav .burger {
       position: relative;
       width: 35px;
-      height: 2px;
+      height: 1px;
       background: #aa2623; }
       header .toggle-nav .burger:after, header .toggle-nav .burger:before {
         position: absolute;
         background: #aa2623;
         content: "";
         display: block;
-        height: 2px;
+        height: 1px;
         transition: all 0.3s ease 0s;
         width: 35px;
         z-index: 1; }
@@ -348,8 +345,6 @@ section.open {
     letter-spacing: 5px;
     margin: 0 0 10px; }
   .info p {
-    font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
-    font-weight: 400;
     color: #756c64;
     font-size: 0.75em;
     font-style: normal;
@@ -404,14 +399,14 @@ section.open {
     background: transparent !important;
     position: relative;
     width: 35px;
-    height: 2px;
+    height: 1px;
     background: #4c3e2d; }
     .toggle .burger:after, .toggle .burger:before {
       position: absolute;
       background: #4c3e2d;
       content: "";
       display: block;
-      height: 2px;
+      height: 1px;
       transition: all 0.3s ease 0s;
       width: 35px;
       z-index: 1; }
@@ -731,14 +726,14 @@ section.open {
   .nda .toggle .burger {
     position: relative;
     width: 35px;
-    height: 2px;
+    height: 1px;
     background: #fff; }
     .nda .toggle .burger:after, .nda .toggle .burger:before {
       position: absolute;
       background: #fff;
       content: "";
       display: block;
-      height: 2px;
+      height: 1px;
       transition: all 0.3s ease 0s;
       width: 35px;
       z-index: 1; }
@@ -763,7 +758,7 @@ section.open {
     padding: 0 2rem; } }
 
 .work-details h5 {
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(255, 255, 255, 0.5);
   margin: 6px 0 3px; }
   .work-details h5 span.small {
     font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
@@ -848,43 +843,27 @@ section.work-details {
 ================================ */
 a.sj {
   color: #f59500; }
-  a.sj:hover {
-    color: #a96600; }
 
 a.india {
   color: #4e8075; }
-  a.india:hover {
-    color: #31504a; }
 
 a.no-place {
   color: #de36d1; }
-  a.no-place:hover {
-    color: #ab1ca0; }
 
 a.tell-collective {
   color: #ffdb2d; }
-  a.tell-collective:hover {
-    color: #e0b900; }
 
 a.sbarch {
   color: #ce5d3b; }
-  a.sbarch:hover {
-    color: #974026; }
 
 a.salon-lofts {
-  color: #fff; }
-  a.salon-lofts:hover {
-    color: #d9d9d9; }
+  color: #fe8125; }
 
 a.ads {
-  color: #fff; }
-  a.ads:hover {
-    color: #d9d9d9; }
+  color: #48c5d9; }
 
 a.huawei {
-  color: #fff; }
-  a.huawei:hover {
-    color: #d9d9d9; }
+  color: #581c12; }
 
 header.demo-builder,
 header.huawei,
