@@ -756,26 +756,27 @@ section.open {
     padding: 0 2rem; } }
 
 .work-details h5 {
-  color: rgba(255, 255, 255, 0.5);
   margin: 6px 0 3px; }
-  .work-details h5 span.small {
-    font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
-    text-transform: uppercase;
-    font-style: normal;
-    font-size: 0.875em; }
-  .work-details h5 span.project-title,
-  .work-details h5 span.service-role {
-    font-size: 0.875em;
-    margin-left: 3px; }
-  .work-details h5 span.project-title {
-    font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
-    font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-style: normal; }
-    @media (min-width: 48em) {
-      .work-details h5 span.project-title {
-        letter-spacing: 10px; } }
+.work-details span.small {
+  font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 0.875em;
+  color: rgba(255, 255, 255, 0.5); }
+.work-details span.project-title,
+.work-details span.service-role {
+  font-size: 0.875em;
+  margin-left: 3px;
+  color: rgba(255, 255, 255, 0.95); }
+.work-details span.project-title {
+  font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: normal; }
+  @media (min-width: 48em) {
+    .work-details span.project-title {
+      letter-spacing: 10px; } }
 .work-details .title p {
   font-size: 0.875em;
   color: rgba(255, 255, 255, 0.95);
