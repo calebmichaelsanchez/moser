@@ -2,9 +2,23 @@
 // Base Styles
 // ==========================================================================
 
-*, *:before, *:after {
-	@include box-sizing(border-box);
-}
+// Susy setup -----------------------------------
+$susy: (
+	columns: 12,
+	gutters: 0,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+);
+
+@include border-box-sizing;
+
+$small                : 32.5em;
+$shmedium             : 37.5em;
+$medium               : 48em;
+$large                : 64em;
+$breakpoint-high-rez	: 'min-resolution: 1.5dppx';
+
 html, body, .wrapper, .content {
 	height: 100%;
 	padding: 0;
@@ -55,8 +69,11 @@ h1 {
 	font-size: 1rem;
 	font-weight: $font-weight--medium;
 	color: #fff;
-	letter-spacing: 13px;
+	letter-spacing: 9px;
 	padding: 0 0 .5em 0;
+	@include breakpoint($shmedium) {
+		letter-spacing: 13px;
+	}
 }
 h2 {
 	font-size: 1rem;
