@@ -11,19 +11,13 @@ $tan              : #faf7f2;
 $footer-color     : #27231e;
 
 $font-url--google        	: 'http://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,400italic';
-$font-family--primary			: Montserrat, Gill Sans, Helvetica, sans-serf;
-$font-family--secondary		: Merriweather, Lucida, serif;
+$font-family--primary			: Montserrat, Futura, Helvetica, sans-serif;
+$font-family--secondary		: Merriweather, Georgia, Times, serif;
 
 // Font Weights
 
 $font-weight--medium     : 400;
 $font-weight--bold       : 700;
-
-
-@if variable-exists(font-url--google) {
-  @import url($font-url--google);
-}
-
 
 // Font Stacks
 

@@ -126,33 +126,33 @@ slider();
 
 
 // Clients Under NDA
-var nonDisclosure = function () {
-  var nope = $("a.nope");
-  var $overlay = $("<div class='nda'></div>");
-  var $exit = $("<div class='toggle'><div class='burger'></div</div>");
+// var nonDisclosure = function () {
+//   var nope = $("a.nope");
+//   var $overlay = $("<div class='nda'></div>");
+//   var $exit = $("<div class='toggle'><div class='burger'></div</div>");
 
-  $overlay.append($exit);
+//   $overlay.append($exit);
 
-  var $caption = $("<p class='ghosted'></p>");
+//   var $caption = $("<p class='ghosted'></p>");
 
-  $caption.append("This work is currently still in progress and protected
-    by an NDA. If you would like to see samples of this project do not
-    hesitate to get in contact with me.");
+//   $caption.append("This work is currently still in progress and protected
+//     by an NDA. If you would like to see samples of this project do not
+//     hesitate to get in contact with me.");
 
-  $overlay.append($caption);
+//   $overlay.append($caption);
 
-  $("body").append($overlay);
+//   $("body").append($overlay);
 
-  $(nope).click(function (e) {
-    e.preventDefault();
-    $overlay.show();
-  });
+//   $(nope).click(function (e) {
+//     e.preventDefault();
+//     $overlay.show();
+//   });
 
-  var exit = $(".toggle");
-  $(exit).click(function () {
-    $overlay.hide();
-  });
-};
+//   var exit = $(".toggle");
+//   $(exit).click(function () {
+//     $overlay.hide();
+//   });
+// };
 
 //nonDisclosure();
 

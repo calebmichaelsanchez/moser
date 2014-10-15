@@ -26,7 +26,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   position: relative;
-  font: 100% Merriweather, Lucida, serif;
+  font: 100% Merriweather, Georgia, Times, serif;
   background: #fff; }
 
 img {
@@ -42,7 +42,7 @@ a {
   transition: all, ease 0.4s; }
 
 p {
-  font-family: Merriweather, Lucida, serif;
+  font-family: Merriweather, Georgia, Times, serif;
   font-size: 0.875em;
   color: #756c64;
   line-height: 1.6; }
@@ -53,14 +53,14 @@ ul, li {
   margin: 0; }
 
 h1, h2, h3, h4 {
-  font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+  font-family: Montserrat, Futura, Helvetica, sans-serif;
   text-transform: uppercase; }
 
 h2, h3, h4 {
   font-weight: 400; }
 
 h5, h6 {
-  font-family: Merriweather, Lucida, serif; }
+  font-family: Merriweather, Georgia, Times, serif; }
 
 h1 {
   font-size: 1rem;
@@ -183,7 +183,7 @@ header {
   .title .btn {
     display: block;
     max-width: 170px;
-    font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+    font-family: Montserrat, Futura, Helvetica, sans-serif;
     font-size: .75em;
     font-weight: 700;
     text-transform: uppercase;
@@ -230,7 +230,7 @@ nav.primary-nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     border-bottom: 1px solid transparent;
-    font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+    font-family: Montserrat, Futura, Helvetica, sans-serif;
     font-weight: 400;
     color: #4c3e2d; }
   nav.primary-nav a.active {
@@ -354,7 +354,7 @@ section.open {
   .info .btn {
     display: block;
     max-width: 280px;
-    font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+    font-family: Montserrat, Futura, Helvetica, sans-serif;
     font-size: .75em;
     font-weight: 700;
     text-transform: uppercase;
@@ -555,7 +555,7 @@ section.open {
   .slides .quote {
     max-width: 80%; }
     .slides .quote h5 {
-      font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+      font-family: Montserrat, Futura, Helvetica, sans-serif;
       font-weight: 400;
       font-style: normal;
       color: #4c3e2d;
@@ -690,58 +690,6 @@ section.open {
       .work-info h2 {
         margin-top: 0px; } }
 
-.nda {
-  display: none;
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(76, 62, 45, 0.85);
-  z-index: 900;
-  -moz-transition: ease 0.6s;
-  -o-transition: ease 0.6s;
-  -webkit-transition: ease 0.6s;
-  transition: ease 0.6s;
-  text-align: center; }
-  .nda:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -0.25em; }
-  .nda div.ghosted {
-    display: inline-block;
-    vertical-align: middle;
-    width: 98%; }
-  .nda .toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 50px;
-    z-index: 800; }
-  .nda .toggle .burger {
-    position: relative;
-    width: 35px;
-    height: 1px;
-    background: #fff; }
-    .nda .toggle .burger:after, .nda .toggle .burger:before {
-      position: absolute;
-      background: #fff;
-      content: "";
-      display: block;
-      height: 1px;
-      transition: all 0.3s ease 0s;
-      width: 35px;
-      z-index: 1; }
-  .nda p {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 650px;
-    text-align: center;
-    color: #fff; }
-
 /* Work Details 
 =================================================== */
 .work-details .toggle-nav {
@@ -758,7 +706,7 @@ section.open {
 .work-details h5 {
   margin: 6px 0 3px; }
 .work-details span.small {
-  font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+  font-family: Montserrat, Futura, Helvetica, sans-serif;
   text-transform: uppercase;
   font-style: normal;
   font-size: 0.875em;
@@ -769,7 +717,7 @@ section.open {
   margin-left: 3px;
   color: rgba(255, 255, 255, 0.95); }
 .work-details span.project-title {
-  font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+  font-family: Montserrat, Futura, Helvetica, sans-serif;
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -804,7 +752,7 @@ section.work-details {
   margin-top: 30px;
   letter-spacing: 2px; }
   .other-projects a {
-    font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+    font-family: Montserrat, Futura, Helvetica, sans-serif;
     color: #756c64;
     font-size: .75rem;
     text-transform: uppercase; }
@@ -937,12 +885,11 @@ footer {
 
 .footer-left {
   width: 58.33333%;
-  float: left;
   padding-left: 3.125em; }
   .footer-left img {
     width: 50px; }
   .footer-left h6 {
-    font-family: Montserrat, Gill Sans, Helvetica, sans-serf;
+    font-family: Montserrat, Futura, Helvetica, sans-serif;
     font-size: 0.875em;
     font-style: normal;
     color: #fff;
@@ -954,8 +901,7 @@ footer {
 .footer-right {
   width: 41.66667%;
   position: relative;
-  float: right;
-  padding-right: 3.125em;
+  padding-left: 3.125em;
   text-align: center; }
   .footer-right:before {
     content: '';
@@ -968,12 +914,12 @@ footer {
     vertical-align: middle;
     width: 98%; }
   .footer-right .ghosted {
-    margin-top: 50px; }
+    margin-top: 25px; }
   .footer-right ul {
-    text-align: right; }
+    text-align: left; }
   .footer-right li {
     display: inline-block;
-    padding-left: 10px; }
+    padding-right: 10px; }
   .footer-right img {
     width: 25px;
     opacity: .5;
@@ -984,7 +930,25 @@ footer {
     .footer-right img:hover {
       opacity: 1; }
   .footer-right p {
-    text-align: right;
+    text-align: left;
     padding: 0; }
+
+@media (min-width: 32.5em) {
+  .footer-left {
+    float: left; }
+
+  .footer-right {
+    float: right;
+    padding-left: 0;
+    padding-right: 3.125em; }
+    .footer-right .ghosted {
+      margin-top: 50px; }
+    .footer-right ul {
+      text-align: right; }
+    .footer-right li {
+      padding-right: 0;
+      padding-left: 10px; }
+    .footer-right p {
+      text-align: right; } }
 
 /*# sourceMappingURL=styles.css.map */
