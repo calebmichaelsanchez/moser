@@ -17,7 +17,7 @@ footer {
 	}
 }
 .footer-left {
-	width: (700px / 1200px) * 100%;
+	width: 100%;
 	padding-left: em(50px);
 	img {
 		width: 50px;
@@ -34,7 +34,7 @@ footer {
 	}
 }
 .footer-right {
-	width: (500px / 1200px) * 100%;
+	width: 100%;
 	position: relative;
 	padding-left: em(50px);
 	
@@ -65,9 +65,11 @@ footer {
 }
 @include breakpoint($small) {
 	.footer-left {
+		width: (700px / 1200px) * 100%;
 		float: left;
 	}
 	.footer-right {
+		width: (500px / 1200px) * 100%;
 		float: right;
 		padding-left: 0;
 		padding-right: em(50px);

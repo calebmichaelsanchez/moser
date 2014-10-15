@@ -884,7 +884,7 @@ footer {
     font-style: normal; }
 
 .footer-left {
-  width: 58.33333%;
+  width: 100%;
   padding-left: 3.125em; }
   .footer-left img {
     width: 50px; }
@@ -899,7 +899,7 @@ footer {
     margin: 0; }
 
 .footer-right {
-  width: 41.66667%;
+  width: 100%;
   position: relative;
   padding-left: 3.125em;
   text-align: center; }
@@ -935,9 +935,11 @@ footer {
 
 @media (min-width: 32.5em) {
   .footer-left {
+    width: 58.33333%;
     float: left; }
 
   .footer-right {
+    width: 41.66667%;
     float: right;
     padding-left: 0;
     padding-right: 3.125em; }
