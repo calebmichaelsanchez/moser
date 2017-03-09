@@ -37,7 +37,7 @@ a {
 
 p {
   font-family: Merriweather, Georgia, Times, serif;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   color: #756c64;
   line-height: 1.6; }
 
@@ -89,7 +89,7 @@ h5 {
   letter-spacing: 1px; }
 
 h6 {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   color: #4c3e2d; }
 
 hr {
@@ -302,12 +302,12 @@ header {
   .about h4, .about p {
     color: #4c3e2d; }
   .about__title {
-    font-size: 0.875em;
+    font-size: 0.875rem;
     letter-spacing: 5px;
     margin: 0 0 10px; }
   .about__text {
     color: #756c64;
-    font-size: 0.75em;
+    font-size: 0.75rem;
     font-style: normal;
     margin-bottom: 1.5em;
     padding: 0 6px; }
@@ -554,16 +554,16 @@ header {
   font-family: Montserrat, Futura, Helvetica, sans-serif;
   text-transform: uppercase;
   font-style: normal;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5); }
 .work-details span.project-title,
 .work-details span.service-role {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   margin-left: 3px;
   color: rgba(255, 255, 255, 0.95); }
 .work-details span.project-title {
   font-family: Montserrat, Futura, Helvetica, sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-style: normal; }
@@ -571,7 +571,7 @@ header {
     .work-details span.project-title {
       letter-spacing: 10px; } }
 .work-details .title p {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.95);
   text-align: left;
   font-style: normal; }
@@ -708,86 +708,36 @@ header.sullivan-bruck {
 header.tell-collective {
   background-image: url("../../work/tell-collective/images/background.jpg"); }
 
-footer {
+.footer {
   position: relative;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   background: #27231e;
-  padding: 2.9375em 0 2.3125em; }
-  footer p {
-    font-size: 0.875em;
+  padding: 40px 20px;
+  font-size: 0; }
+  .footer p {
+    font-size: 0.875rem;
     color: #fff;
     padding: 0;
     margin: 5px 0 0;
     font-style: normal; }
-
-.footer-left {
-  width: 100%;
-  padding-left: 3.125em; }
-  .footer-left img {
-    width: 50px; }
-  .footer-left h6 {
-    font-family: Montserrat, Futura, Helvetica, sans-serif;
-    font-size: 0.875em;
-    font-style: normal;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 4px;
-    margin: 0; }
-
-.footer-right {
-  width: 100%;
-  position: relative;
-  padding-left: 3.125em;
-  text-align: center; }
-  .footer-right:before {
-    content: '';
+  .footer .footer__item {
+    width: 50%;
     display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -0.25em; }
-  .footer-right div.ghosted {
-    display: inline-block;
-    vertical-align: middle;
-    width: 98%; }
-  .footer-right .ghosted {
-    margin-top: 25px; }
-  .footer-right ul {
-    text-align: left; }
-  .footer-right li {
-    display: inline-block;
-    padding-right: 10px; }
-  .footer-right img {
-    width: 25px;
-    opacity: .5;
-    transition: .4s ease; }
-    .footer-right img:hover {
-      opacity: 1; }
-  .footer-right p {
-    text-align: left;
-    padding: 0; }
-
-@media (min-width: 32.5em) {
-  .footer-left {
-    width: 58.33333%;
-    float: left; }
-
-  .footer-right {
-    width: 41.66667%;
-    float: right;
-    padding-left: 0;
-    padding-right: 3.125em; }
-    .footer-right .ghosted {
-      margin-top: 50px; }
-    .footer-right ul {
+    vertical-align: middle; }
+    .footer .footer__item h6 {
+      font-family: Montserrat, Futura, Helvetica, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 4px;
+      margin: 0; }
+    .footer .footer__item--social {
       text-align: right; }
-    .footer-right li {
-      padding-right: 0;
-      padding-left: 10px; }
-    .footer-right p {
-      text-align: right; } }
+
 .overlay {
   position: fixed;
   top: 0;
