@@ -39,11 +39,11 @@
 		@include respond-to(medium) {
 			width: 50%;
 		}
-	}
-	hr { background-color: $secondary-color; }
-	h2 {
-		text-align: left;
-		font-weight: $font-weight--medium;
-		margin-bottom: 0;
+		h2 {
+			text-align: left;
+			font-weight: $font-weight--medium;
+			margin-bottom: 0;
+		}
+		hr { background-color: $secondary-color; }
 	}
 }
