@@ -1,0 +1,91 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+footer {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background: $footer-color;
+	padding: em(47px) 0 em(37px);
+	p {
+		font-size: em(14px);
+		color: $white;
+		padding: 0;
+		margin: 5px 0 0;
+		font-style: normal;
+	}
+}
+.footer-left {
+	width: 100%;
+	padding-left: em(50px);
+	img {
+		width: 50px;
+	}
+	h6 {
+		font-family: $font-family--primary;
+		font-size: em(14px);
+		font-style: normal;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: $font-weight--medium;
+		letter-spacing: 4px;
+		margin: 0;
+	}
+}
+.footer-right {
+	width: 100%;
+	position: relative;
+	padding-left: em(50px);
+
+	@include ghost;
+
+	.ghosted {
+		margin-top: 25px;
+	}
+	ul {
+		text-align: left;
+	}
+	li {
+		display: inline-block;
+		padding-right: 10px;
+	}
+	img {
+		width: 25px;
+		opacity: .5;
+		transition: .4s ease;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	p {
+		text-align: left;
+		padding: 0;
+	}
+}
+@include respond-to(small) {
+	.footer-left {
+		width: (700px / 1200px) * 100%;
+		float: left;
+	}
+	.footer-right {
+		width: (500px / 1200px) * 100%;
+		float: right;
+		padding-left: 0;
+		padding-right: em(50px);
+
+		.ghosted {
+			margin-top: 50px;
+		}
+		ul {
+			text-align: right;
+		}
+		li {
+			padding-right: 0;
+			padding-left: 10px;
+		}
+		p {
+			text-align: right;
+		}
+	}
+}

@@ -1,0 +1,103 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html, body, .wrapper, .content {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+body {
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+	font: 100% $font-family--secondary;
+	background: #fff;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+// ==================================
+// Typography
+// ==================================
+a {
+	text-decoration: none;
+	transition: all, 0.4s ease;
+	font-size: 1rem;
+}
+p {
+	font-family: $font-family--secondary;
+	font-size: em(14px);
+	color: $secondary-color;
+	line-height: 1.6;
+}
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4 {
+	font-family: $font-family--primary;
+	text-transform: uppercase;
+}
+h2, h3, h4 {
+	font-weight: $font-weight--medium;
+}
+h5, h6 {
+	font-family: $font-family--secondary;
+}
+h1 {
+	font-size: 1rem;
+	font-weight: $font-weight--medium;
+	color: #fff;
+	letter-spacing: 9px;
+	padding: 0 0 .5em 0;
+	@include respond-to(shmedium) {
+		letter-spacing: 13px;
+	}
+}
+h2 {
+	font-size: 1rem;
+	color: $primary-color;
+	letter-spacing: 5px;
+	margin: 0 0 10px;
+}
+h3 {
+	font-size: 1.3rem;
+	color: rgba(#000, .7);
+	letter-spacing: 2px;
+	margin-bottom: 6px;
+}
+h4	{
+	font-size: 1.2rem;
+	color: #fff;
+	letter-spacing: 10px;
+}
+h5	{
+	font-size: .875rem;
+	color: rgba(#000, .7);
+	letter-spacing: 1px;
+}
+h6 {
+	font-size: em(14px);
+	color: $primary-color;
+}
+hr {
+	border: none;
+	background: rgba($white, .5);
+	height: 1px;
+	width: 20px;
+	margin: 1em 0;
+}
+
+/* Globals
+========================================*/
+span.red {
+	color: $tertiary-color;
+}

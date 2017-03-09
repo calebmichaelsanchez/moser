@@ -1,0 +1,71 @@
+// ==========================================================================
+// About
+// ==========================================================================
+
+.about {
+	@include ghost;
+	position: absolute;
+	background: rgba($tan, 1);
+	z-index: 400;
+	width: 100%;
+	height: 100%;
+	top: -130%;
+	left: 0;
+	padding: 0 1rem;
+	margin: 0;
+	line-height: 2em;
+	overflow: hidden;
+	transition: top 1s ease;
+	.is-about-open & {
+		top: 0;
+		transition: top 1s ease;
+	}
+	&__info {
+		width: 100%;
+		max-width: 500px;
+		position: relative;
+		@include respond-to(medium) { text-align: left; }
+	}
+	h4, p {
+		color: $primary-color;
+	}
+	&__title {
+		font-size: em(14px);
+		letter-spacing: 5px;
+		margin: 0 0 10px;
+	}
+	&__text {
+		color: $secondary-color;
+		font-size: em(12px);
+		font-style: normal;
+		margin-bottom: 1.5em;
+		padding: 0 6px;
+		@include respond-to(medium) {
+			padding: 0;
+		}
+	}
+	.btn {
+		@include btn(280px, $primary-color, $primary-color);
+		clear: both;
+	}
+}
+
+.toggle {
+	position: absolute;
+	padding: 1em;
+	top: 2em;
+	right: 2em;
+	background: none;
+	cursor: pointer;
+	z-index: 400;
+	.burger {
+		background: transparent !important;
+		@include burger($primary-color);
+		&:after {
+			transform: rotate(45deg);
+		}
+		&:before {
+			transform: rotate(-45deg);
+		}
+	}
+}

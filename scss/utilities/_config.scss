@@ -1,0 +1,52 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+$primary-color    : #4c3e2d;
+$primary-hover    : #9a2422;
+$secondary-color  : #756c64;
+$tertiary-color   : #b8463a;
+
+$moser-red        : #aa2623;
+$tan              : #faf7f2;
+$footer-color     : #27231e;
+
+$font-url--google        	: 'http://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,400italic';
+$font-family--primary			: Montserrat, Futura, Helvetica, sans-serif;
+$font-family--secondary		: Merriweather, Georgia, Times, serif;
+
+// Font Weights
+
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+
+// Descriptive Base Colors
+
+$white    : #fff;
+$black    : #0b0b0b;
+$grey     : #797e83;
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Border radius
+
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Transitions
+
+$trns-duration  : .3s;
+
+// Path to Assets
+
+$path--rel      : "../img";
+
+// Grid
+
+$small    : 32.5em;
+$shmedium : 37.5em;
+$medium   : 48em;
+$large    : 64em;

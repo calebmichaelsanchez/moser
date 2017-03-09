@@ -1,0 +1,151 @@
+/* Work Details
+=================================================== */
+.work-details {
+	.toggle-nav {
+		padding: 1rem 1rem;
+	}
+	.title {
+		max-width: 875px;
+		padding: 0 1rem;
+	}
+	@include respond-to(shmedium) {
+		.toggle-nav {
+			padding: 1rem 2rem;
+		}
+		.title {
+			padding: 0 2rem;
+		}
+	}
+}
+.work-details {
+	h5 {
+		margin: 6px 0 3px;
+	}
+	span.small {
+		font-family: $font-family--primary;
+		text-transform: uppercase;
+		font-style: normal;
+		font-size: em(14px);
+		color: rgba($white, .5);
+	}
+	span.project-title,
+	span.service-role {
+		font-size: em(14px);
+		margin-left: 3px;
+		color: rgba($white, .95);
+	}
+	span.project-title {
+		font-family: $font-family--primary;
+		font-size: em(16px);
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-style: normal;
+		@include respond-to(medium) {
+			letter-spacing: 10px;
+		}
+	}
+	.title p {
+		font-size: em(14px);
+		color: rgba(#fff, .95);
+		text-align: left;
+		font-style: normal;
+	}
+}
+section.work-details {
+	width: 100%;
+	padding: 4em 1rem;
+
+	article.details {
+		width: 100%;
+		max-width: 960px;
+		margin: 0 auto;
+
+		img {
+			display: block;
+			margin-bottom: .75rem;
+		}
+		@include respond-to(small) {
+			> div img {
+				width: 50%;
+				float: left;
+				padding: 10px;
+			}
+		}
+	}
+}
+.other-projects {
+	position: relative;
+	margin-top: 30px;
+	letter-spacing: 2px;
+	a {
+		font-family: $font-family--primary;
+		color: #756c64;
+		font-size: .75rem;
+		text-transform: uppercase;
+		&:hover {
+			color: #4c3e2d;
+		}
+	}
+	.prev-project,
+	.next-project {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		top: 0;
+	}
+	.back-to-top {
+		position: relative;
+		width: 50%;
+		margin: 20px auto;
+		text-align: center;
+	}
+	@include respond-to(small) {
+		.prev-project,
+		.next-project {
+			position: absolute;
+			width: 30%;
+		}
+		.prev-project {
+			text-align: left;
+			left: 0;
+		}
+		.next-project {
+			text-align: right;
+			right: 0;
+		}
+		.back-to-top {
+			margin: 0 auto;
+		}
+	}
+}
+
+// Images with borders
+.border {
+	border: 1px solid #eee;
+}
+/* Work Detail Link Styles
+================================ */
+a.sj {
+	@include work-link(#f59500);
+}
+a.india {
+	@include work-link(#4e8075);
+}
+a.no-place {
+	@include work-link(#de36d1);
+}
+a.tell-collective {
+	@include work-link(#ffdb2d);
+}
+a.sbarch {
+	@include work-link(#ce5d3b);
+}
+a.salon-lofts {
+	@include work-link(#fe8125);
+}
+a.ads {
+	@include work-link(#48c5d9);
+}
+a.huawei {
+	@include work-link(#581c12);
+}

@@ -1,0 +1,60 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+header.home {
+	@include big-bg(url("../images/mobile_background/01_background.jpg"));
+}
+header {
+	@include ghost;
+
+	position: relative;
+
+	@include respond-to(shmedium) {
+		background-image: url("../images/01.jpg");
+	} // breakpoint
+
+	.toggle-nav {
+		position: absolute;
+		padding: 1rem 2rem;
+		top: 25px;
+
+		@include respond-to(medium) {
+			display: none;
+		} // breakpoint
+
+		.burger {
+			@include burger($moser-red);
+
+			&:before {
+				top: -10px;
+			} // before
+			&:after {
+				top: 10px;
+			} // after
+
+		} // burger
+	} // toggle-nav
+} // header
+
+.title {
+	text-align: left;
+	max-width: 378px;
+	padding: 0 2em;
+	h1 {
+		font-weight: $font-weight--medium;
+		padding: 0;
+	}
+	h6 {
+		color: #fff;
+		margin: 0 0 30px;
+	}
+	.btn {
+		@include btn(170px, $white, $white);
+	}
+	@include respond-to(shmedium) {
+		max-width: 448px;
+		h1 {
+			font-size: 1.25rem;
+		}
+	}
+}

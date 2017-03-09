@@ -1,0 +1,47 @@
+// ==========================================================================
+// Work Grid on Home page
+// ==========================================================================
+.work {
+	position: relative;
+	width: 100%;
+	max-width: $small;
+	margin: 0 auto;
+	padding: 0 1em;
+	text-align: center;
+	//font-size: 0;
+	@include respond-to(medium) {
+		max-width: $medium;
+	}
+	&__blurb {
+		position: relative;
+		display: block;
+		padding: 0 0 4rem;
+		max-width: 349px;
+		margin: 0 auto;
+		text-align: center;
+		p {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		@include respond-to(shmedium) {
+			max-width: 460px;
+		}
+	}
+	&__item {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0;
+		margin: 0 0 27.5px;
+		width: 100%;
+		@include respond-to(medium) {
+			width: 50%;
+		}
+	}
+	hr { background-color: $secondary-color; }
+	h2 {
+		text-align: left;
+		font-weight: $font-weight--medium;
+		margin-bottom: 0;
+	}
+}

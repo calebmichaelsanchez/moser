@@ -1,18 +1,47 @@
 {
+  "name": "joshwalker.com",
+  "version": "1.0.0",
+  "description": "Portfolio for Joshua Walker",
+  "main": "js/index.js",
+  "repository": "https://github.com/calebmichaelsanchez/moser",
+  "config": {
+    "css_file": "./src/public/css/screen.css",
+    "scss_file": "./scss/screen.scss"
+  },
+  "scripts": {
+    "build:js:dev": "webpack -d",
+    "build:css:dev": "sass --sourcemap=none --scss $npm_package_config_scss_file $npm_package_config_css_file",
+
+    "build:js:production": "webpack -p",
+    "build:css:production": "postcss --use autoprefixer --autoprefixer.browsers 'last 2 versions' --output $npm_package_config_css_file $npm_package_config_css_file",
+
+    "build": "npm-run-all build:js:production build:css:production",
+
+    "server": "nodemon src/walker.js",
+    "livereload": "livereload \"./src/public, ./src/views\" -e 'pug' -w 1000 -d",
+    "watch": "npm-run-all --parallel watch:js watch:scss",
+    "watch:js": "nodemon -e js --watch ./js -x \"npm run build:js:dev\"",
+    "watch:scss": "nodemon -e scss --watch ./scss -x \"npm run build:css:dev\"",
+
+    "dev": "npm-run-all --parallel livereload server watch"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "gulp": "^3.8.7",
-    "gulp-csslint": "^0.1.5",
-    "gulp-jshint": "^1.8.4",
-    "gulp-livereload": "^2.1.1",
-    "gulp-ruby-sass": "^0.7.1",
-    "gulp-uglify": "^0.3.1",
-    "jquery": "^2.1.1",
-    "jshint-stylish": "^0.4.0"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "properjs-hobo": "^0.3.11",
+    "pug": "^2.0.0-beta11",
+    "smoothscroll-polyfill": "^0.3.4"
   },
   "devDependencies": {
-    "beepbeep": "^1.2.0",
-    "gulp-plumber": "^0.6.5",
-    "gulp-util": "^3.0.1",
-    "jshint-stylish": "^0.4.0"
+    "autoprefixer": "^6.7.1",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.13.2",
+    "npm-run-all": "^3.0.0",
+    "onchange": "^3.2.1",
+    "postcss-cli": "^2.6.0",
+    "webpack": "^1.13.2"
   }
 }

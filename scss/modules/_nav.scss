@@ -1,0 +1,98 @@
+// ==============================================================
+// Navigation
+// ==============================================================
+.nav {
+	display: block;
+	position: fixed;
+	width: 100%;
+	top: -130%;
+	left: 0;
+	padding: 0;
+	background: #fff;
+	z-index: 300;
+	transition: top 1s ease;
+	.is-menu-open & {
+		top: 0;
+		transition: top 1s ease;
+	}
+	@include respond-to(medium) {
+		top: 0;
+		background: transparent;
+	}
+	&__list {
+		position: relative;
+		text-align: center;
+		font-size: 0;
+		@include respond-to(medium) {
+			width: 80%;
+			max-width: 1200px;
+			margin: 0 auto;
+			text-align: left;
+		}
+	}
+	&__item {
+		display: block;
+		@include respond-to(medium) {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&--logo {
+		 	img {
+				display: block;
+				margin: 10px auto 5px;
+				max-width: 50px;
+			}
+			@include respond-to(medium) { display: none; }
+		}
+	}
+	&__link {
+		display: block;
+		width: 100%;
+		padding: 1rem 0;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		border-bottom: 1px solid transparent;
+		font-family: $font-family--primary;
+		font-weight: $font-weight--medium;
+		color: $primary-color;
+		font-size: .95rem;
+		@include respond-to(medium) {
+			font-size: .75rem;
+			color: rgba($white, 0.5);
+			padding: 2.5em 40px;
+			&:hover {
+				color: rgba($white, 1);
+			}
+		}
+	}
+	&__arrow {
+		display: block;
+		margin: 0 auto;
+		width: 38px;
+		@include respond-to(medium) {
+			display: none;
+		}
+	}
+	.nav-scrolled & {
+		background: rgba(#fff, .98);
+		transition: 0.4s ease;
+		.nav__link {
+			color: rgba($primary-color, 0.7);
+			&:hover {
+				color: rgba($primary-color, 1);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
