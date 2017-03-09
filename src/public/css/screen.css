@@ -512,6 +512,8 @@ header {
     max-width: 349px;
     margin: 0 auto;
     text-align: center; }
+    .work__blurb h2 {
+      text-align: center; }
     .work__blurb p {
       margin-bottom: 0;
       padding-bottom: 0; }
